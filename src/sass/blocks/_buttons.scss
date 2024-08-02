@@ -1,0 +1,126 @@
+
+.is-style-primary > .wp-element-button {
+  background-color: $tertiary !important;
+  color: $primary !important;
+  @include button;
+
+  &:hover {
+    background-color: $secondary !important;
+    color: $primary !important;
+  }
+}
+
+
+.wp-block-button:not(.is-style-white) > .wp-element-button {
+  background-color: $tertiary;
+  color: $secondary;
+  @include button;
+
+  &:hover {
+    background-color: $black !important;
+    color: $white !important;
+  }
+}
+
+
+.is-style-outline > .wp-block-button__link:not(.has-text-color, .has-background) {
+  background-color: $transparent !important;
+  color: $black !important;
+  border-color: $black !important;
+
+  &:hover {
+    background-color: $black !important;
+    color: $white !important;
+    border-color: $black !important;
+  }
+}
+
+.is-style-outline-green > .wp-block-button__link:not(.has-text-color, .has-background) {
+  background-color: $transparent !important;
+  color: $tertiary !important;
+  border: 1px solid $tertiary !important;
+
+  &:hover {
+    background-color: $tertiary !important;
+    color: $white !important;
+    border-color: $tertiary !important;
+  }
+}
+
+.wp-block-button {
+  &.is-style-dark-black {
+    > .wp-element-button {
+      &:hover {
+        background-color: $tertiary !important;
+        color: $white !important;
+      }
+    }
+  }
+
+  &.is-style-fill-big {
+    > .wp-element-button {
+      @include button;
+      padding: .75em 1.85em;
+      letter-spacing: .025rem;
+      font-weight: 600;
+      font-size: .75rem;
+    }
+  }
+}
+
+.editor-styles-wrapper .wp-element-button {
+  background-color: $tertiary !important;
+  color: $secondary !important;
+  @include button;
+
+  &:hover {
+    background-color: $primary !important;
+    color: $white !important;
+  }
+}
+
+
+.is-style-white > .wp-element-button {
+  background-color: $white;
+  @include button;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.is-style-read-more-link {
+
+
+  > .wp-element-button.wp-block-button__link {
+    background-color: $transparent !important;
+    color: $black;
+    border-bottom: 1px solid $black !important;
+    border-radius: 0 !important;
+    min-height: unset !important;
+    min-width: unset !important;
+    padding: unset !important;
+
+    &.has-tertiary-color {
+      border-color: $tertiary !important;
+    }
+
+    &:hover {
+      background-color: $transparent !important;
+      color: $black !important;
+      border-color: $transparent !important;
+    }
+  }
+}
+
+
+.wp-block-search__button {
+  background-color: $tertiary !important;
+  border: 1px solid $tertiary !important;
+  &:hover {
+    background-color: $black !important;
+    color: $white !important;
+    border-color: $tertiary !important;
+  }
+}

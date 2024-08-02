@@ -1,0 +1,14 @@
+{
+  "name": "acf/single-product-booking-info",
+  "title": "Product Booking Info",
+  "description": "Single Product Booking Info",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "book",
+  "keywords": ["box", "info", "esperluxe", "booking"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

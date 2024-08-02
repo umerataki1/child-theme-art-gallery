@@ -1,0 +1,7 @@
+.wp-block-gallery {
+  &.is-style-vertically-centered {
+    .wp-block-image {
+      margin: 0 !important;
+    }
+  }
+}

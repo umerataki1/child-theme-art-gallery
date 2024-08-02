@@ -1,0 +1,14 @@
+{
+  "name": "acf/single-product-related-items",
+  "title": "You may also like",
+  "description": "Related Products",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "info",
+  "keywords": ["related", "products", "carousal", "slider"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

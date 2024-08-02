@@ -1,0 +1,45 @@
+.wp-block-query-pagination {
+  .wp-block-query-pagination-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+
+    .page-numbers{
+      background-color: #becdc9;
+      padding: 3px 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      color: $black;
+      transition: $transition;
+      &.current{
+        background-color: $tertiary;
+        color: $white;
+      }
+      &:hover{
+        background-color: $tertiary;
+        color: $white;
+      }
+
+    }
+  }
+  .wp-block-query-pagination-next,
+  .wp-block-query-pagination-previous{
+    background-color: #becdc9;
+    color: $black;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 0;
+    transition: $transition;
+    &:hover{
+      background-color: $tertiary;
+      color: $white;
+    }
+  }
+}
+
+.wp-block-query-no-results {
+  text-align: center;
+}

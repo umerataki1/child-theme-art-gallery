@@ -1,0 +1,17 @@
+{
+  "name": "acf/product-models-count",
+  "title": "Models Count",
+  "description": "Display Models Count",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "thumbs-up",
+  "keywords": ["count", "box", "esperluxe", "products"],
+  "apiVersion": 2,
+  "supports": {
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

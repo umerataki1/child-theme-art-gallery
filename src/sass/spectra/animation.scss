@@ -1,0 +1,7 @@
+[data-aos^=slide][data-aos^=slide] {
+  transition-property: transform !important;
+}
+
+[data-aos^=fade][data-aos^=fade], [data-aos^=zoom][data-aos^=zoom] {
+  transition-property: opacity, transform !important;
+}

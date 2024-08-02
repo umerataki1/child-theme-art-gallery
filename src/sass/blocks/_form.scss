@@ -1,0 +1,38 @@
+.gform_confirmation_message {
+  h2 {
+    font-size: $font-size-h2;
+  }
+    background: #d8f4d8;
+    padding: 5px 10px;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.gform-body {
+  .gform_fields {
+    gap: 20px !important;
+    column-gap: 11px !important;
+  }
+}
+
+.gform_footer {
+  .gform_button {
+    @include button-small;
+    background-color: $tertiary !important;
+    color: $white !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+
+    &:hover {
+      background-color: $black !important;
+      color: $white !important;
+    }
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a8a8a8 !important;
+}

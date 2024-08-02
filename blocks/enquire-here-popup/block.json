@@ -1,0 +1,14 @@
+{
+  "name": "acf/enquire-here-popup",
+  "title": "CC Enquire Here Popup",
+  "description": "Display Enquire Here Popup",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "align-full-width",
+  "keywords": ["citizen caller", "popup", "modal"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

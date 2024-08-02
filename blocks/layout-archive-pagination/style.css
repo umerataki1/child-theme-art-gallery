@@ -1,0 +1,23 @@
+.wp-block-archive-archive-pagination .nav-links ul.page-numbers {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.wp-block-archive-archive-pagination .nav-links li .page-numbers{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--wp--preset--color--black);
+    padding: 5px 12px;
+    border: 1px solid var(--wp--preset--color--foreground);
+    border-radius: 3px;
+}
+
+.wp-block-archive-archive-pagination .nav-links li .page-numbers.current,
+.wp-block-archive-archive-pagination .nav-links li .page-numbers:hover{
+    color: var(--wp--preset--color--black);
+    background: #0070bb24;
+    border-collapse: #0070bb24;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "acf/woocommerce-category-hero",
+  "title": "Category Page Hero Section",
+  "description": "Show category name, image and description",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "category",
+  "keywords": ["hero", "products", "category"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

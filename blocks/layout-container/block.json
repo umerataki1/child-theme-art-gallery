@@ -1,0 +1,16 @@
+{
+  "name": "acf/layout-container",
+  "title": "CC Layout Container",
+  "description": "To add the layout blocks inside this container block",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "schedule",
+  "apiVersion": 2,
+  "supports": {
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

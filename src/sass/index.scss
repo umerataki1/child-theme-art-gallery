@@ -1,0 +1,83 @@
+@import "mixins";
+@import "settings";
+@import "blocks/buttons";
+@import "blocks/footer";
+@import "blocks/form";
+@import "blocks/woo-breadcrumbs";
+@import "blocks/detail-tabs-sidebar";
+@import "blocks/wc-filters";
+@import "blocks/column";
+@import "blocks/gallery";
+@import "blocks/group";
+@import "blocks/cover-block";
+@import "blocks/product-template";
+@import "blocks/spectra-slider";
+@import "blocks/responsive";
+@import "blocks/menu";
+@import "blocks/wp-block-post-terms-and-date";
+@import  "blocks/pagination";
+@import "blocks/catelog-sorting";
+@import "blocks/wc-block-components-product-price";
+//@import "blocks/header";
+//@import "blocks/image-block";
+//@import "blocks/comments";
+
+
+@import "archive/archive-category";
+
+@import "page/contact";
+
+@import "single/product";
+
+@import "spectra/animation";
+
+@import "page/customizer";
+
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.is-style-full-height {
+  height: 100% !important;
+
+  > img {
+    height: 100% !important;
+  }
+}
+
+
+.is-style-reverse {
+  @include breakpoint-max(large) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+
+
+.is-style-overflow {
+  overflow: hidden !important;
+}
+
+
+.full-height-column > figure {
+  height: 100%;
+  width: 100%;
+}
+
+.full-height-column > figure > img {
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/**
+* Before & After Slider
+*/
+
+.is-style-responsive-layout {
+  @include breakpoint(xlarge) {
+    max-height: 100% !important;
+  }
+}
+
+

@@ -1,0 +1,33 @@
+.wp-block-single-product-detail-tabs {
+
+  ::-webkit-scrollbar {
+
+    -webkit-appearance: none;
+    width: 5px;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #707070;
+    &:hover {
+      background: $tertiary;
+    }
+  }
+
+  ::-webkit-overflow-scrolling:touch {
+    background: #707070;
+    width: 5px;
+  }
+}

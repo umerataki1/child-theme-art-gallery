@@ -1,0 +1,14 @@
+{
+  "name": "acf/news-complete-box-link",
+  "title": "News Complete Box Link",
+  "description": "Show news images, overlapy content and readmore button",
+  "category": "theme",
+  "style": ["file:./style.css"],
+  "icon": "category",
+  "keywords": ["news", "news-box", "acf"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

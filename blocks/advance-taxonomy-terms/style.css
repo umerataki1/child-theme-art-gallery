@@ -1,0 +1,12 @@
+.cc-container ul {
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cc-container ul.cc-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}

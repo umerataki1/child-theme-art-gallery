@@ -1,0 +1,25 @@
+{
+  "name": "acf/advance-taxonomy-terms",
+  "title": "Advance Taxonomy Terms",
+  "description": "Displays the Product Categories, Tags, or any selected taxonomy with advance options.",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "editor-insertmore",
+  "apiVersion": 2,
+  "keywords": [
+    "list",
+    "navigation",
+    "taxonomy terms",
+    "template",
+    "custom",
+    "categories",
+    "tags",
+    "accordions",
+    "dropdown",
+    "product"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

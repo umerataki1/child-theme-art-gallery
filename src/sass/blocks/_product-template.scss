@@ -1,0 +1,9 @@
+.home{
+  .wp-block-post-template{
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    @include breakpoint-max(xhuge){
+      gap: 3rem;
+    }
+  }
+}

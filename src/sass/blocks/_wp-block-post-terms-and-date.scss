@@ -1,0 +1,19 @@
+.page{
+  .wp-block-post-date{
+    border-radius: 50px;
+    a{
+      text-decoration: none !important;
+    }
+  }
+
+  .wp-block-post-terms {
+    &.is-style-pill{
+      border: 1px solid $black;
+      border-radius: 50px;
+      a{
+        padding: 3px 12px !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+}

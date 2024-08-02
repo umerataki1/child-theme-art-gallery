@@ -1,0 +1,10 @@
+.wp-block-cover {
+  &.is-style-just-image {
+    @include breakpoint-max(xlarge) {
+      min-height: 300px !important;
+    }
+    @include breakpoint-max(wp-small) {
+      min-height: 200px !important;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.wp-block-group.woocommerce.product {
+  margin-top: 0;
+
+  @include breakpoint-max(wp-small) {
+    padding-top: 10px;
+    > .wp-block-spacer {
+      display: none;
+    }
+  }
+.wc-block-components-product-price {
+  font-size: $font-size-h4;
+
+  .woocommerce-Price-currencySymbol {
+    font-size: $font-size-h6;
+  }
+}
+
+.wc-block-product-gallery-thumbnails {
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .wc-block-product-gallery-thumbnails__thumbnail {
+    flex: 1 0 calc(50% - 10px) !important;
+  }
+
+}
+
+.wc-block-product-gallery-large-image__image-element {
+  padding: 1px !important;
+  img{
+    &:hover{
+      transform: scale(1.1) !important;
+    }
+  }
+}
+}

@@ -1,0 +1,124 @@
+//.has-global-padding{
+//  @include breakpoint-max(xxlarge) {
+//    padding-left: min(3.5rem, 5vw) !important;
+//    padding-right: min(3.5rem, 5vw) !important;
+//  }
+//}
+
+//@media (min-width: 330px) and (max-width: 786px) {
+//  .is-style-responsive {
+//    flex-direction: column !important;
+//    gap: 0.2rem !important;
+//    font-size: 12px !important;
+//    white-space: nowrap;
+//  }
+//}
+//
+//@media (max-width: 330px) {
+//  .is-style-responsive {
+//    flex-direction: column !important;
+//    gap: 0.2rem !important;
+//    font-size: 12px !important;
+//    white-space: nowrap;
+//  }
+//}
+//
+//
+//@media (max-width: 1024px) {
+//  .wp-block-columns > .wp-block-column > figure > img {
+//    width: 100% !important;
+//  }
+//  .wp-block-columns > .wp-block-column > figure {
+//    width: 100% !important;
+//  }
+//}
+//
+//.column-two > img {
+//  aspect-ratio: 16/9;
+//  object-fit: cover;
+//}
+//
+//
+//@media (max-width: 1240px) {
+//  h1 {
+//    line-height: 1.4 !important;
+//  }
+//}
+//
+//@media (max-width: 1240px) {
+//  .is-style-responsive-content > h1 {
+//    line-height: 1 !important;
+//  }
+//}
+//
+//@media (max-width: 1024px) {
+//  .is-style-stack-column {
+//    flex-direction: column !important;
+//  }
+//}
+//
+//
+//@media (max-width: 1240px) {
+//  .is-style-responsive-cta-banner {
+//    min-height: 40vh !important;
+//  }
+//}
+//
+//@media (max-width: 1240px) {
+//  .is-style-responsive-banner {
+//    min-height: 50vh !important;
+//  }
+//}
+//
+//@media screen and (max-width: 1240px) and (min-width: 768px) {
+//  .is-style-responsive-container {
+//    margin-top: 120px !important;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  .is-style-contact-section {
+//    margin-top: 85px !important;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  .is-style-responsive-container {
+//    margin-top: 85px !important;
+//    /* 		margin-bottom: 90px !important; */
+//  }
+//  .is-style-responsive-container:last-child {
+//    margin-bottom: 90px !important;
+//  }
+//}
+//
+//@media screen and (max-width: 1240px) and (min-width: 768px) {
+//  .is-style-filled-container {
+//    padding-top: 50px !important;
+//    padding-bottom: 50px !important;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  .is-style-filled-container {
+//    padding-top: 80px !important;
+//    padding-bottom: 50px !important;
+//  }
+//}
+//
+//.is-style-bar-responsive {
+//  height: 60px !important;
+//}
+//
+//
+//@include breakpoint-max(wp-small) {
+//
+//
+//  .wp-block-navigation__responsive-container {
+//    li {
+//      a {
+//        padding: 0.5em 0.8em !important;
+//      }
+//    }
+//  }
+//}

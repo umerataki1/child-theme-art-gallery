@@ -1,0 +1,121 @@
+.wpfMainWrapper {
+
+  .wpfFilterContent {
+    #wpfSliderRange {
+      .ui-slider-range {
+        background: $tertiary !important;
+      }
+
+      .ui-slider-handle {
+        border-radius: 50%;
+
+        &:hover {
+          border-color: $tertiary !important;
+        }
+      }
+    }
+  }
+
+  .wpfFilterVerScroll {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .wpfFilterTaxNameWrapper {
+      color: $light-black;
+      font-weight: $font-regular;
+    }
+  }
+
+  .wfpTitle {
+    font-size: $font-size-h4;
+    font-weight: $font-heavy;
+    color: $light-black;
+    text-transform: capitalize;
+  }
+
+  .wpfLiLabel {
+    display: flex;
+    margin: 0;
+
+    .wpfCheckbox {
+      label {
+        margin: 0;
+      }
+    }
+
+    .wpfDisplay {
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .wpfFilterButtons {
+    display: flex;
+  }
+
+  .wpfButton {
+    @include button-small;
+    border: 1px solid;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 100px !important;
+    max-width: max-content;
+
+    &.wpfFilterButton {
+      background-color: transparent;
+      border-color: $black;
+      color: $black;
+      transition: $transition;
+
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    &.wpfClearButton {
+      background-color: transparent;
+      border-color: $black;
+      color: $black;
+      transition: $transition;
+
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+.filter-clear-button{
+  .wpfClearButton{
+    display: none !important;
+    visibility: hidden !important;
+  }
+  &.active{
+    .wpfClearButton{
+      display: block !important;
+      visibility: visible !important;
+    }
+  }
+}
+
+
+.wpfFilterVerScroll{
+  overflow: hidden !important;
+  &.wp-height{
+    max-height: 500px !important;
+  }
+}
+
+
+.wbw-filter-more {
+  display: inline-block;
+  margin-top: 10px;
+  * {
+    color: #1d1c1c !important;
+  }
+}
+

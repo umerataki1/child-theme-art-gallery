@@ -1,0 +1,14 @@
+{
+  "name": "acf/single-product-detail-tabs",
+  "title": "Product Details Tabs",
+  "description": "Single Product Details Tabs",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "editor-table",
+  "keywords": ["detail", "excerpt", "content"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

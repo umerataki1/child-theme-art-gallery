@@ -1,0 +1,31 @@
+.is-style-header-top-bar {
+  > .wp-block-columns {
+    @include breakpoint-max(small-3) {
+      flex-direction: column !important;
+      text-align: center;
+      .wp-block-group {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.cc-header-bottom-row {
+  @include breakpoint-max(small-3) {
+    gap: 0 !important;
+    nav {
+      ul {
+        gap: 10px;
+      }
+
+      .is-style-hover-animation {
+        .wp-block-navigation-item {
+          a {
+            transition: $transition;
+            padding: .5em;
+          }
+        }
+      }
+    }
+  }
+}

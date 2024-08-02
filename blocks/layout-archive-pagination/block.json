@@ -1,0 +1,14 @@
+{
+  "name": "acf/layout-archive-pagination",
+  "title": "Layout Archive Pagination",
+  "description": "Display Archive Pagination",
+  "category": "theme",
+  "icon": "schedule",
+  "apiVersion": 2,
+  "style": [ "file:./style.css" ],
+  "keywords": ["archive", "portfolio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

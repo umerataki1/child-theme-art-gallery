@@ -1,0 +1,14 @@
+{
+  "name": "acf/single-product-info-box",
+  "title": "Info Box",
+  "description": "Single Product Info Box",
+  "category": "theme",
+  "style": [ "file:./style.css" ],
+  "icon": "info",
+  "keywords": ["box", "info", "esperluxe"],
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  }
+}

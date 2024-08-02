@@ -1,0 +1,66 @@
+.wp-block-single-product-booking-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.booking-box {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.booking-box img {
+    height: 20px !important;
+    width: auto;
+}
+
+.booking-box p,
+.booking-box a {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+    line-height: 24px !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.booking-box a:before{
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background: #000;
+    display: block;
+    bottom: 0;
+    transition: all .4s ease;
+}
+
+.booking-box a:hover:before{
+    width: 100%;
+}
+
+.booking-box.box-share {
+    gap: 0;
+}
+
+.box-social-share,
+.box-sku-ref {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.box-sku-ref{
+    border-left: 1px solid #CACACC;
+    padding-left:11px;
+    margin-left:11px;
+}
+.addtoany_shortcode {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}

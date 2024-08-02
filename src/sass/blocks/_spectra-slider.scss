@@ -1,0 +1,22 @@
+.wp-block-uagb-slider {
+  .swiper-content{
+    padding: 0 !important;
+  }
+  .swiper-pagination {
+    width: fit-content;
+    right: 30%;
+    left: auto;
+    transform: translate(50%, 0px);
+
+    .swiper-pagination-bullet {
+      width: 30px;
+      height: 2px;
+      border: none;
+      border-radius: 0;
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+
+}

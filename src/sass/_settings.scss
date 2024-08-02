@@ -1,0 +1,139 @@
+// Grids
+
+// this should match with theme.json
+$grid-container: 1140; // 1126 =>  980
+$grid-container-wide: 1440; // 1360 => 1180
+//$grid-container-narrow: 900px; // nothing
+$grid-container-padding: 2.1785rem; // This mainly controls the spacing on sides for small screens
+
+
+//$grid-margin-gutters: (small: 23px, medium: 31px, large: 39px);
+//$grid-padding-gutters: (small: 46px, medium: 62px, large: 78px);
+//$grid-padding-gutters-reduce: (small: 46px, medium: 40px, large: 34px);
+
+$breakpoints: (
+        small: 0,
+        mobile:480px,
+        wp-small: 600px,
+        medium: 782px,
+        large: 960px,
+        xlarge:1080px,
+        xxlarge: 1140px,
+        huge:1280px,
+        xhuge: 1440px,
+        xxhuge:1920,
+        unlimited: 9999px,
+);
+
+/**
+ * Colours for Theme
+ * (Ideally, these should be css variables created with theme.json
+ */
+
+// General Colors
+$white: #ffffff;
+$black: #000000;
+$light-black: #4A4949;
+$grey: #848484;
+$light-grey: #F8F8F8;
+$dark-grey: #555555;
+$medium-grey: #dedede;
+$input-bg: #fafafa;
+$input-border-clr: #a9a9a9;
+$light-black: #1d1c1c;
+
+
+/**
+ * Theme.json Set Color Variables
+ */
+$text-color: var(--wp--preset--color--text-color);
+
+$primary: var(--wp--preset--color--primary);
+$secondary: var(--wp--preset--color--secondary);
+$tertiary: var(--wp--preset--color--tertiary);
+
+
+// variable used in sass of various features
+$tertiary2: $grey;
+$tertiary3: $light-grey;
+$transparent: var(--wp--preset--color--transparent);
+
+/**
+ * Theme.json Set Font Variables
+ */
+$font-size-regular: 1rem;
+$font-size-xsmall: var(--wp--preset--font-size--xsmall); // 10px
+$font-size-small: var(--wp--preset--font-size--small); // 12px
+$font-size-regular: var(--wp--preset--font-size--regular); // 16px
+$font-size-large: var(--wp--preset--font-size--large); // 20px
+$font-size-xlarge: var(--wp--preset--font-size--xlarge); // 25px
+$font-size-medium: var(--wp--preset--font-size--medium); // 18px
+$font-size-h1: var(--wp--preset--font-size--h-1);
+$font-size-h2: var(--wp--preset--font-size--h-2);
+$font-size-h3: var(--wp--preset--font-size--h-3);
+$font-size-h4: var(--wp--preset--font-size--h-4);
+$font-size-h5: var(--wp--preset--font-size--h-5);
+$font-size-h6: var(--wp--preset--font-size--h-6);
+
+
+$block-gap: var(--wp--style--block-gap);
+
+// Fonts
+$font-colour: $text-color;
+$font-light: normal;
+$font-heavy: bold;
+$font-regular: 400;
+$font-semi: 600;
+$font-primary: var(--wp--preset--font-family--primary-font);
+$font-secondary: var(--wp--preset--font-family--secondary-font);
+$font-awesome-family: 'Font Awesome 6 Free';
+
+
+// Transitions
+$transition-duration: 0.4s;
+$transition-style: ease;
+$transition: $transition-duration $transition-style;
+
+/**
+* Misc.
+*/
+$button-transition-duration: 0.30s;
+$button-transition-style: ease;
+$button-transition: $button-transition-duration $button-transition-style;
+
+$cubic-transition: opacity .5s cubic-bezier(.4,.9,.3,1),color .5s cubic-bezier(.4,.9,.3,1),border-color .5s cubic-bezier(.4,.9,.3,1),background-color .5s cubic-bezier(.4,.9,.3,1);
+$prod-icon-transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+
+.editor-styles-wrapper {
+  color: $black;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+  font-size: $font-size-h2;
+  font-weight: $font-regular;
+  color: $primary;
+}
+
+.has-global-padding {
+  padding-right: var(--wp--preset--spacing--40);
+  padding-left: var(--wp--preset--spacing--40);
+}
+
+
+
+.has-global-padding > .alignfull {
+  margin-right: calc(var(--wp--preset--spacing--40) * -1);
+  margin-left: calc(var(--wp--preset--spacing--40) * -1);
+}
+
+.wp-block-group{
+  &.is-content-justification-center{
+    text-align:center;
+  }
+  &.is-content-justification-right{
+    text-align: right;
+  }
+  &.is-content-justification-left{
+    text-align: left;
+  }
+}
