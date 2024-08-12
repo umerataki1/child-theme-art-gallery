@@ -1,0 +1,139 @@
+/* Wrapper for the entire nav menu block */
+.custom-nav-menu {
+  background-color: transparent; /* Transparent background */
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  position: relative; /* Needed for hamburger menu positioning */
+}
+
+/* Default styling for the unordered list of menu items (desktop) */
+.custom-nav-menu .nav-menu-items {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Space between menu items */
+}
+
+/* Styling individual list items */
+.custom-nav-menu .nav-menu-items li {
+  margin: 0;
+  position: relative; /* Necessary for submenu positioning */
+}
+
+/* Styling the links within the menu */
+.custom-nav-menu .nav-menu-items li a {
+  display: flex; /* Block display to allow full clickable area */
+  text-decoration: none; /* Remove underline */
+  font-size: var(--wp--preset--font-size--small);
+  padding: 10px 15px; /* Padding around the links */
+  border-radius: 4px; /* Slight rounding of corners */
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease; /* Smooth transition */
+  position: relative; /* Needed to position icons */
+}
+
+/* Styling for icons */
+.custom-nav-menu .nav-menu-items li a span svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Hover effect for menu links */
+.custom-nav-menu .nav-menu-items li a:hover {
+  color: var(--wp--preset--color--black); /* Change text color on hover */
+  text-decoration: underline; /* Underline text on hover */
+  background-color: var(
+    --wp--preset--color--transparent
+  ); /* Transparent background */
+}
+
+/* Submenu styling */
+.custom-nav-menu .nav-menu-items li ul {
+  display: none; /* Hide submenu by default */
+  position: absolute; /* Position relative to parent li */
+  left: 0; /* Position submenu below parent item */
+  top: 100%; /* Align submenu to the bottom of the parent item */
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  background-color: transparent; /* Transparent background for submenu */
+}
+
+/* Display submenu on hover */
+.custom-nav-menu .nav-menu-items li:hover > ul {
+  display: block; /* Show submenu on hover */
+}
+
+/* Submenu item styling */
+.custom-nav-menu .nav-menu-items li ul li {
+  width: max-content; /* Adjust width to content */
+  background-color: transparent; /* Transparent background */
+}
+
+/* Submenu link styling */
+.custom-nav-menu .nav-menu-items li ul li a {
+  padding: 10px 15px; /* Padding for submenu items */
+}
+
+/* Active link styling */
+.custom-nav-menu .nav-menu-items li a.current-menu-item {
+  color: var(
+    --wp--preset--color--secondary
+  ); /* WordPress blue for active menu item */
+  text-decoration: underline; /* Underline active item */
+}
+
+/* Hamburger menu icon styling */
+.custom-nav-menu .hamburger {
+  display: none; /* Hide by default on desktop */
+  cursor: pointer;
+  font-size: var(--wp--preset--font-size--medium);
+  margin-right: 20px;
+  padding: 10px;
+}
+
+/* Show hamburger menu and hide main menu on mobile */
+@media (max-width: 768px) {
+  .custom-nav-menu .nav-menu-items {
+    display: none; /* Hide the horizontal menu */
+    flex-direction: column; /* Stack items vertically when shown */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background-color: var(
+      --wp--preset--color--white
+    ); /* Background for mobile menu */
+    padding: 20px;
+    gap: 10px; /* Space between menu items */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for mobile menu */
+  }
+
+  .custom-nav-menu .hamburger {
+    display: block; /* Show hamburger icon */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .custom-nav-menu .nav-menu-items li ul {
+    left: auto; /* Reset submenu positioning */
+    top: auto; /* Reset submenu positioning */
+    position: static; /* Make submenu position static */
+  }
+
+  .custom-nav-menu .nav-menu-items li:hover > ul {
+    display: none; /* Disable hover effect on mobile */
+  }
+}
+
+/* Show menu when toggled on mobile */
+.custom-nav-menu.open .nav-menu-items {
+  display: flex; /* Show the menu */
+}

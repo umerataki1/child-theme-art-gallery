@@ -141,23 +141,3 @@ $rem-base: 16px;
   @include button;
   min-width: 168px !important;
 }
-
-/* Example usage of the mixin */
-.header {
-  background: #333;
-  color: white;
-  padding: 10px;
-  text-align: left;
-
-  @include breakpoint(mobile) {
-    background-color: #a30000;
-  }
-
-  @include breakpoint(medium) {
-    background-color: #555;
-  }
-
-  @include breakpoint(large) {
-    background: #666;
-  }
-}

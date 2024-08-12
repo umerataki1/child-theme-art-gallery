@@ -1,0 +1,78 @@
+.wp-block-campaign-email-template p {
+  margin: 0;
+}
+
+.cc-email-template-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cc-email-template-title p {
+  font-size: clamp(1.75rem, 1.21875rem + 1.770833vw, 2.8125rem);
+  font-weight: lighter;
+  color: var(--wp--preset--color--text-color);
+}
+
+select#cc-campaign-contacts {
+  padding: 9px;
+  font-size: var(--wp--preset--font-size--body);
+  font-weight: bold;
+  min-width: 300px;
+  color: var(--wp--preset--color--text-color);
+  border-radius: 3px;
+  outline-color: var(--wp--preset--color--text-color) !important;
+}
+
+.cc-email-subject p:first-of-type {
+  font-size: var(--wp--preset--font-size--medium);
+  color: var(--wp--preset--color--light-black);
+  font-style: normal;
+  font-weight: 600;
+  padding-bottom: 8px !important;
+}
+
+.cc-email-subject p:last-of-type {
+  padding-bottom: 25px;
+  color: var(--wp--preset--color--light-black);
+}
+
+.cc-email-body-content {
+  margin-bottom: 30px;
+}
+
+.cc-email-body-content p {
+  font-size: var(--wp--preset--font-size--body);
+  color: var(--wp--preset--color--light-black);
+}
+
+.cc-campaign-btn-outline {
+  border: 1px solid var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--primary);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s cubic-bezier(0.47, 0, 0.75, 0.72);
+  padding: 15px 34px;
+  width: max-content;
+  font-size: 16px;
+}
+
+.cc-campaign-btn-outline:hover {
+  background-color: var(--wp--preset--color--text-color);
+  color: var(--wp--preset--color--secondary);
+  border-color: 1px solid var(--wp--preset--color--text-color);
+}
+
+.cc-copy-btn {
+  color: var(--wp--preset--color--primary);
+  cursor: pointer;
+}
+
+.cc-copy-btn:hover {
+  text-decoration: underline;
+}
+
+.cc-single-not-hidden {
+  display: block !important;
+}

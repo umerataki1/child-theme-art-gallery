@@ -1,29 +1,6 @@
 /*!********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sass/index.scss ***!
   \********************************************************************************************************************************************************************************************************************************************/
-/* Example usage of the mixin */
-.header {
-  background: #333;
-  color: white;
-  padding: 10px;
-  text-align: right;
-}
-@media (min-width: 480px) {
-  .header {
-    background-color: #a30000;
-  }
-}
-@media (min-width: 782px) {
-  .header {
-    background-color: #555;
-  }
-}
-@media (min-width: 960px) {
-  .header {
-    background: #666;
-  }
-}
-
 /**
  * Colours for Theme
  * (Ideally, these should be css variables created with theme.json
@@ -300,17 +277,6 @@ a.wp-block-button__link.wp-element-button {
 }
 .wp-block-gallery.is-style-vertically-centered .wp-block-image {
   margin: 0 !important;
-}
-
-@media (max-width: calc(1080px - 1px)) {
-  .wp-block-cover.is-style-just-image {
-    min-height: 300px !important;
-  }
-}
-@media (max-width: calc(600px - 1px)) {
-  .wp-block-cover.is-style-just-image {
-    min-height: 200px !important;
-  }
 }
 
 .home .wp-block-post-template {

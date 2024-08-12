@@ -1,0 +1,13 @@
+{
+  "name": "acf/nav-menu",
+  "title": "Nav menu",
+  "description": "A costme navigation menu block.",
+  "style": ["file:./style.css"],
+  "category": "theme",
+  "icon": "email",
+  "keywords": ["Menu", "navigation", "nav", "custom navigation"],
+  "acf": {
+    "renderTemplate": "render.php"
+  },
+  "align": "full"
+}

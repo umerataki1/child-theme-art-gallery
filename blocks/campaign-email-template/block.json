@@ -1,0 +1,19 @@
+{
+  "name": "acf/campaign-email-template",
+  "title": "Campaign Email Template",
+  "description": "A custom Campaign Email Template block.",
+  "style": [
+    "file:./style.css"
+  ],
+  "category": "theme",
+  "icon": "email",
+  "keywords": [
+    "campaign",
+    "email",
+    "template"
+  ],
+  "acf": {
+    "renderTemplate": "render.php"
+  },
+  "align": "full"
+}
