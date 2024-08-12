@@ -1,86 +1,38 @@
-
-  .wp-site-blocks {
-    > .wp-block-group {
-      .gform_body {
-        .gfield {
-          input:not(input[type="checkbox"]), select, textarea {
-            border: 1px solid $input-border-clr;
-            background-color: $input-bg;
-            padding: 10px;
-            min-height: 46px;
-            font-size: 16px;
-            color: $black;
-            &:focus{
-              box-shadow: none !important;
-            }
-          }
-          input[type="checkbox"]{
-            &:checked{
-              background-color: $black;
-              color: $white;
-              margin: 0;
-              padding: 0;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-color: $black;
-              &:before{
-                color: $white;
-                border-color: $black;
-              }
-            }
-            &:focus{
-              box-shadow: none !important;
-            }
-          }
-
-          select {
-            padding-top: 4px;
-            padding-bottom: 0;
-          }
-        }
-      }
-
+.as-contact-section {
+  min-height: 85vh;
+}
+.wp-site-blocks {
+  > .wp-block-group {
+    .gform_body {
       .gfield {
-        > div.ginput_container {
-          > input {
-            padding-left: 50px;
-          }
-
-
-          position: relative;
-
-          .country-code {
-            position: absolute;
-            left: 0;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            padding-left: 10px;
-            -webkit-user-select: none; /* Safari */
-            user-select: none;
-            font-size: 16px;
-            color: $black;
+        select,
+        textarea,
+        input {
+          border: 1px solid $light-grey;
+          background-color: $light-grey;
+          padding: 10px;
+          min-height: 46px;
+          font-size: 16px;
+          color: $black;
+          &:focus {
+            box-shadow: none !important;
           }
         }
+
+        select {
+          padding-top: 4px;
+          padding-bottom: 0;
+        }
       }
-
-      .contact-us-country {
-        display: flex;
-
-        > div.ginput_container {
-          flex-basis: 100%;
-          margin-left: 0;
-          margin-right: 0;
-
-          .ginput_address_country {
-            inline-size: 100%;
-            padding-right: 0 !important;
-            padding-left: 0 !important;
-          }
+    }
+    .gform-theme--foundation .gform_footer {
+      flex-direction: column;
+      .gform_button {
+        background-color: $black !important;
+        &:focus {
+          box-shadow: none !important;
         }
       }
     }
   }
+}

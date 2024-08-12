@@ -30,7 +30,7 @@ class After_Theme_Setup
          * Register Theme Hooks
          */
         add_action('wp_enqueue_scripts', [$this, 'enqueue_child_theme_scripts']);
-//		add_action( 'enqueue_block_assets', [ $this, 'enqueue_child_theme_admin_scripts' ] );
+ 		add_action( 'enqueue_block_assets', [ $this, 'enqueue_child_theme_admin_scripts' ] );
         add_action('enqueue_block_editor_assets', [$this, 'enqueue_child_theme_admin_scripts']);
         add_action('after_setup_theme', [$this, 'enqueue_child_theme_editor_scripts']);
         add_action('after_setup_theme', [$this, 'customizer_selective_refresh_widgets']);
@@ -44,10 +44,10 @@ class After_Theme_Setup
     public function enqueue_child_theme_scripts()
     {
         // Enqueue parent theme's stylesheet
-        wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+       wp_enqueue_style('parent-style-css', get_template_directory_uri() . '/style.css');
 
         // Enqueue child theme's stylesheet
-        wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/build/public.css', array('parent-style'), '1.0.0', 'all');
+        wp_enqueue_style('child-style-css', get_stylesheet_directory_uri() . '/build/public.css', array('parent-style'), '1.0.0', 'all');
 
 
         // Enqueue child theme's JavaScript file

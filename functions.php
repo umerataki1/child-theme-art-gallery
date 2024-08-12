@@ -25,6 +25,12 @@ require get_stylesheet_directory() . '/includes/helper-functions.php';
  */
 require get_stylesheet_directory() . '/includes/class-acf.php';
 require get_stylesheet_directory() . '/includes/class-after-theme-setup.php';
+
+ 
+ 
+ 
+// asstes file includies.
+require_once get_theme_file_path('lib/theme-support.php');
  
 function init() {
 	new Theme_Acf();

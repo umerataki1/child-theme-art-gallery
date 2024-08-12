@@ -271,9 +271,9 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/index.scss */ "./src/sass/index.scss");
 /* harmony import */ var _js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js */ "./src/js/index.js");
-console.log('this is public file public.css');
+console.log("this is public file public.css");
 
-console.log('this is public file public.js');
+console.log("this is public file public.js");
 
 })();
 

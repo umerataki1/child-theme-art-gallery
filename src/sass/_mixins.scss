@@ -20,7 +20,7 @@
   }
 }
 
-@mixin breakpoint-min-max($min, $max : unlimited) {
+@mixin breakpoint-min-max($min, $max: unlimited) {
   @if map-has-key($breakpoints, $min) and map-has-key($breakpoints, $max) {
     @media (min-width: map-get($breakpoints, $min)) and (max-width: calc(#{map-get($breakpoints, $max)} - 1px)) {
       @content;
@@ -30,7 +30,6 @@
           + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
-
 
 /* Rem calc */
 $rem-base: 16px;
@@ -55,11 +54,31 @@ $rem-base: 16px;
   }
   $remValues: ();
   @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+    $remValues: append(
+      $remValues,
+      convert-to-rem(nth($values, $i), $base-value)
+    );
   }
   @return $remValues;
 }
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
 
+  @if $value {
+    @media (min-width: #{$value}) {
+      @content;
+    }
+  } @else {
+    @error "No value found for '#{$breakpoint}' in \$breakpoints map.";
+  }
+}
+
+@mixin medium {
+  @media (max-width: map-get($breakpoint, "medium")) {
+    @content;
+  }
+}
 
 @mixin alertBoxStyling {
   .alert-box {

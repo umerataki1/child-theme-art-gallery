@@ -15,7 +15,7 @@
 * Misc.
 */
 .editor-styles-wrapper {
-  color: #000000;
+  color: #222222;
 }
 
 .has-drop-cap:not(:focus)::first-letter {

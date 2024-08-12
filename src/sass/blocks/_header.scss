@@ -1,30 +1,35 @@
-.is-style-header-top-bar {
-  > .wp-block-columns {
-    @include breakpoint-max(small-3) {
-      flex-direction: column !important;
-      text-align: center;
-      .wp-block-group {
-        justify-content: center;
-      }
-    }
-  }
+a.wp-block-navigation-item__content {
+  text-decoration: none !important;
+}
+.home header {
+  background-color: $light-grey;
 }
 
-.cc-header-bottom-row {
-  @include breakpoint-max(small-3) {
-    gap: 0 !important;
-    nav {
-      ul {
-        gap: 10px;
-      }
+header {
+  border-bottom: 1px #cccccc solid;
+}
 
-      .is-style-hover-animation {
-        .wp-block-navigation-item {
-          a {
-            transition: $transition;
-            padding: .5em;
-          }
-        }
+.as-header-row {
+  .wp-block-group {
+    .as-logo {
+      @medium respond-to(mobile) {
+        order: 1;
+      }
+    }
+    .as-min-cart {
+      @medium respond-to(mobile) {
+        display: none;
+      }
+    }
+
+    .as-nav-menu {
+      @medium respond-to(mobile) {
+        order: 2;
+      }
+    }
+    .as-icon-inst {
+      @medium respond-to(mobile) {
+        display: none;
       }
     }
   }
