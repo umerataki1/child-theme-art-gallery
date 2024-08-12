@@ -50,6 +50,18 @@ a.wp-block-button__link.wp-element-button {
   padding-left: 30px !important;
 }
 
+footer.wp-block-template-part nav.custom-nav-menu {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+footer.wp-block-template-part nav.custom-nav-menu li a {
+  padding: 0;
+}
+footer.wp-block-template-part nav.custom-nav-menu li a:hover {
+  color: var(--wp--preset--color--white);
+}
+
 .woocommerce-breadcrumb {
   margin: 0 !important;
 }
@@ -915,7 +927,7 @@ nav#quadmenu.quadmenu-is-horizontal .quadmenu-navbar-nav > li.quadmenu-navbar-na
   z-index: 1;
 }
 .as-home-top-section .as-sile-heading::before {
-  content: url("http://caradv.local/wp-content/uploads/2024/08/Shape-1.svg");
+  content: url("https://art.duckdemo.com/wp-content/uploads/2024/08/Shape-1.svg");
   position: absolute;
   z-index: -1;
   top: -40px;
@@ -935,7 +947,7 @@ nav#quadmenu.quadmenu-is-horizontal .quadmenu-navbar-nav > li.quadmenu-navbar-na
   z-index: 1;
 }
 .as-home-heading::before {
-  content: url("http://caradv.local/wp-content/uploads/2024/08/logo-shape.svg");
+  content: url("https://art.duckdemo.com/wp-content/uploads/2024/08/logo-shape.svg");
   position: absolute;
   z-index: -1;
   bottom: 10px;

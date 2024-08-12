@@ -1,1 +1,13 @@
- 
+footer.wp-block-template-part {
+  nav.custom-nav-menu {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    li a {
+      padding: 0;
+      &:hover {
+        color: var(--wp--preset--color--white);
+      }
+    }
+  }
+}
