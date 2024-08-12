@@ -1,3 +1,17 @@
+$breakpoints: (
+  small: 0,
+  mobile: 480px,
+  wp-small: 600px,
+  medium: 782px,
+  large: 960px,
+  xlarge: 1080px,
+  xxlarge: 1140px,
+  huge: 1280px,
+  xhuge: 1440px,
+  xxhuge: 1920px,
+  unlimited: 9999px,
+);
+
 @mixin breakpoint($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
@@ -31,7 +45,6 @@
   }
 }
 
-/* Rem calc */
 $rem-base: 16px;
 
 @function strip-unit($num) {
@@ -43,7 +56,6 @@ $rem-base: 16px;
   @if ($value == 0rem) {
     $value: 0;
   }
-  // Turn 0rem into 0
   @return $value;
 }
 
@@ -60,24 +72,6 @@ $rem-base: 16px;
     );
   }
   @return $remValues;
-}
-// Mixin for media queries
-@mixin respond-to($breakpoint) {
-  $value: map-get($breakpoints, $breakpoint);
-
-  @if $value {
-    @media (min-width: #{$value}) {
-      @content;
-    }
-  } @else {
-    @error "No value found for '#{$breakpoint}' in \$breakpoints map.";
-  }
-}
-
-@mixin medium {
-  @media (max-width: map-get($breakpoint, "medium")) {
-    @content;
-  }
 }
 
 @mixin alertBoxStyling {
@@ -131,20 +125,39 @@ $rem-base: 16px;
 
 @mixin button {
   height: 35px !important;
-  //min-width: 205px !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
-  transition: $transition;
+  transition: 0.3s;
   font-size: 16px;
-  font-weight: $font-light;
+  font-weight: 300;
   border-radius: 0;
   cursor: pointer;
-  font-family: $font-secondary;
+  font-family: "Arial", sans-serif;
   line-height: 100% !important;
 }
 
 @mixin button-small {
   @include button;
   min-width: 168px !important;
+}
+
+/* Example usage of the mixin */
+.header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+
+  @include breakpoint(mobile) {
+    background-color: #a30000;
+  }
+
+  @include breakpoint(medium) {
+    background-color: #555;
+  }
+
+  @include breakpoint(large) {
+    background: #666;
+  }
 }

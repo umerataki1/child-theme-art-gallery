@@ -1,7 +1,29 @@
 /*!********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sass/index.scss ***!
   \********************************************************************************************************************************************************************************************************************************************/
-/* Rem calc */
+/* Example usage of the mixin */
+.header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .header {
+    background-color: #a30000;
+  }
+}
+@media (min-width: 782px) {
+  .header {
+    background-color: #555;
+  }
+}
+@media (min-width: 960px) {
+  .header {
+    background: #666;
+  }
+}
+
 /**
  * Colours for Theme
  * (Ideally, these should be css variables created with theme.json
@@ -124,12 +146,12 @@ a.wp-block-button__link.wp-element-button {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  transition: 0.4s ease;
+  transition: 0.3s;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 300;
   border-radius: 0;
   cursor: pointer;
-  font-family: var(--wp--preset--font-family--secondary-font);
+  font-family: "Arial", sans-serif;
   line-height: 100% !important;
   min-width: 168px !important;
   border: 1px solid;
