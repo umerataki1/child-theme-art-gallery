@@ -12,23 +12,27 @@ header {
 .as-header-row {
   .wp-block-group {
     .as-logo {
-      @medium respond-to(mobile) {
+      @include breakpoint(xlarge) {
         order: 1;
+        width: 60%;
+        display: flex;
       }
     }
     .as-min-cart {
-      @medium respond-to(mobile) {
+      @include breakpoint(xlarge) {
         display: none;
       }
     }
 
     .as-nav-menu {
-      @medium respond-to(mobile) {
+      @include breakpoint(xlarge) {
         order: 2;
+        width: 30%;
+        display: flex;
       }
     }
     .as-icon-inst {
-      @medium respond-to(mobile) {
+      @include breakpoint(xlarge) {
         display: none;
       }
     }

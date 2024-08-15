@@ -81,12 +81,25 @@ nav#quadmenu.quadmenu-is-horizontal
   &:hover {
     background-color: $black !important;
   }
+  @include breakpoint(xlarge) {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  @include breakpoint(medium) {
+    bottom: -40px !important;
+  }
 }
 .swiper-button-prev {
   right: 15% !important;
+  @include breakpoint(xlarge) {
+    right: 14% !important;
+  }
 }
 .swiper-button-next {
   right: 6% !important;
+  @include breakpoint(xlarge) {
+    right: 3% !important;
+  }
 }
 .as-home-slieder-slide-number {
   font-size: 200px !important;
@@ -94,10 +107,33 @@ nav#quadmenu.quadmenu-is-horizontal
   text-align: end;
 
   color: $grey;
+  @include breakpoint(xlarge) {
+    display: none;
+  }
 }
 .as-home-slider {
   padding-top: 70px !important;
   background-color: $light-grey !important;
+}
+.as-slider-col {
+  @include breakpoint(xlarge) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .wp-block-column {
+    @include breakpoint(xlarge) {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center !important;
+      h2 {
+        text-align: center !important;
+      }
+      p {
+        text-align: center !important;
+      }
+    }
+  }
 }
 .as-home-top-section {
   .as-sile-heading {
@@ -109,6 +145,9 @@ nav#quadmenu.quadmenu-is-horizontal
       z-index: -1;
       top: -40px;
       max-height: 300px;
+      // @include breakpoint(xlarge) {
+      //   display: none;
+      // }
     }
   }
   p {
@@ -160,6 +199,9 @@ nav#quadmenu.quadmenu-is-horizontal
         }
       }
     }
+  }
+  @include breakpoint(medium) {
+    display: none;
   }
 }
 
