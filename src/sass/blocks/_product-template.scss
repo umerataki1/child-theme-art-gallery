@@ -13,6 +13,7 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
   .wc-block-components-product-image.wc-block-grid__product-image {
     width: 100%;
     max-width: 411px;
@@ -39,6 +40,10 @@
     }
   }
   @include breakpoint-max(medium) {
+    gap: 30px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  @include breakpoint-max(xlarge) {
     gap: 30px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

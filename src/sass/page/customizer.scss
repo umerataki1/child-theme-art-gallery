@@ -37,12 +37,25 @@ nav#quadmenu.quadmenu-is-horizontal
   > ul {
   min-height: 400px !important;
 }
+
 .uagb-block-8a9bf8ba.wp-block-uagb-image .wp-block-uagb-image__figure img {
   width: 100%;
 }
 
 .as-hero-white {
   align-items: flex-end;
+}
+.as-col-reves {
+  .uagb-container-inner-blocks-wrap {
+    @include breakpoint(xlarge) {
+      flex-direction: column-reverse !important;
+    }
+  }
+}
+.wp-block-uagb-container.uagb-block-0bcadb14 {
+  @include breakpoint(xlarge) {
+    padding-top: 200px !important;
+  }
 }
 .as-image-fullfit img {
   width: 100% !important;
@@ -68,6 +81,9 @@ nav#quadmenu.quadmenu-is-horizontal
 .as-imge-under-image-home {
   position: absolute !important;
   top: -26% !important;
+  @include breakpoint(xlarge) {
+    top: 4% !important;
+  }
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -86,19 +102,19 @@ nav#quadmenu.quadmenu-is-horizontal
     height: 100px !important;
   }
   @include breakpoint(medium) {
-    bottom: -40px !important;
+    bottom: 10px !important;
   }
 }
 .swiper-button-prev {
   right: 15% !important;
   @include breakpoint(xlarge) {
-    right: 14% !important;
+    right: calc(63% - 100px) !important ;
   }
 }
 .swiper-button-next {
-  right: 6% !important;
+  right: 6% !important ;
   @include breakpoint(xlarge) {
-    right: 3% !important;
+    right: calc(50% - 100px) !important  ;
   }
 }
 .as-home-slieder-slide-number {
@@ -114,6 +130,9 @@ nav#quadmenu.quadmenu-is-horizontal
 .as-home-slider {
   padding-top: 70px !important;
   background-color: $light-grey !important;
+  @include breakpoint(xlarge) {
+    padding-top: 0px !important;
+  }
 }
 .as-slider-col {
   @include breakpoint(xlarge) {
@@ -136,6 +155,16 @@ nav#quadmenu.quadmenu-is-horizontal
   }
 }
 .as-home-top-section {
+  .uagb-slides {
+    @include breakpoint(xlarge) {
+      min-height: 1200px !important;
+      display: flex;
+      align-items: center;
+    }
+  }
+  @include breakpoint(xlarge) {
+    padding: 0 !important;
+  }
   .as-sile-heading {
     position: relative;
     z-index: 1;
@@ -145,9 +174,20 @@ nav#quadmenu.quadmenu-is-horizontal
       z-index: -1;
       top: -40px;
       max-height: 300px;
-      // @include breakpoint(xlarge) {
-      //   display: none;
-      // }
+      @include breakpoint(xlarge) {
+        content: " ";
+        top: -125px;
+        height: 300px !important;
+        left: -19px;
+        background-position: center;
+        background-size: contain;
+
+        background: url(https://art.duckdemo.com/wp-content/uploads/2024/08/Shape-1.svg)
+          center;
+        background-size: contain;
+        width: 150px;
+        background-repeat: no-repeat;
+      }
     }
   }
   p {
