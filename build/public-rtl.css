@@ -386,7 +386,7 @@ body.archive div.wp-site-blocks div.as-products-shop-page {
 body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post-template {
   display: grid;
   gap: 50px !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post-template li {
   border: none !important;
@@ -395,10 +395,16 @@ body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post
   text-decoration: none !important;
   font-weight: 400;
 }
-@media (max-width: calc(782px - 1px)) {
+@media (max-width: calc(1080px - 1px)) {
   body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post-template {
     gap: 30px !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: calc(782px - 1px)) {
+  body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post-template {
+    gap: 30px !important;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
@@ -490,10 +496,6 @@ body.archive div.wp-site-blocks div.as-products-shop-page ul.products-block-post
   padding: 10px;
 }
 
-.wc-block-components-product-price {
-  font-size: 18px !important;
-}
-
 a.wp-block-navigation-item__content {
   text-decoration: none !important;
 }
@@ -528,6 +530,20 @@ header {
 @media (max-width: 1080px) {
   .as-header-row .wp-block-group .as-icon-inst {
     display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .as-about-col-resp {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 40px;
+  }
+}
+@media (max-width: 782px) {
+  .as-about-col-resp {
+    padding: 20px;
   }
 }
 
@@ -1133,6 +1149,15 @@ nav#quadmenu.quadmenu-is-horizontal .quadmenu-navbar-nav > li.quadmenu-navbar-na
 
 .as-commission-produtcs img {
   aspect-ratio: unset !important;
+}
+
+@media (max-width: 1080px) {
+  .as-mobile-center {
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 html {

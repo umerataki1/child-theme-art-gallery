@@ -107,10 +107,14 @@ body.archive {
             }
           }
         }
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        @include breakpoint-max(medium) {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        @include breakpoint-max(xlarge) {
           gap: 30px !important;
           grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @include breakpoint-max(medium) {
+          gap: 30px !important;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
         }
       }
     }

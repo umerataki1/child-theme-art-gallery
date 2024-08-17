@@ -1,0 +1,11 @@
+.as-about-col-resp {
+  @include breakpoint(xlarge) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 40px;
+  }
+  @include breakpoint(medium) {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "custom/two-buttons",
+  "title": "Product Buttons",
+  "description": "A block with two buttons for single product pages.",
+  "style": ["file:./style.css"],
+  "category": "widgets",
+  "icon": "button",
+  "keywords": ["product", "buttons", "cart"],
+  "acf": {
+    "renderTemplate": "render.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "multiple": false
+  },
+  "example": {}
+}

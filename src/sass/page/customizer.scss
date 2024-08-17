@@ -251,3 +251,13 @@ nav#quadmenu.quadmenu-is-horizontal
     aspect-ratio: unset !important;
   }
 }
+
+//responsive class definitions
+.as-mobile-center {
+  @include breakpoint(xlarge) {
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
