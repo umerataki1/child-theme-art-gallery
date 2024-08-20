@@ -14,7 +14,7 @@
     "dev": "concurrently -k \"npm run start\" \"npm run sync\""
   },
   "devDependencies": {
-    "@wordpress/scripts": "^28.4.0",
+    "@wordpress/scripts": "^19.2.4",
     "browser-sync": "^3.0.2",
     "concurrently": "^8.2.2",
     "dotenv": "^16.3.1"

@@ -165,3 +165,8 @@
     left: -100px;
   }
 }
+@media (max-width: 686px) {
+  .custom-nav-menu .nav-menu-items li {
+    margin-left: 50px;
+  }
+}

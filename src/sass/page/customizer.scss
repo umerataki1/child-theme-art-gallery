@@ -101,3 +101,11 @@ nav#quadmenu.quadmenu-is-horizontal
     align-items: center;
   }
 }
+
+.woocommerce-shop {
+  header {
+    div.wp-block-columns.as-header-row {
+      padding: 0 !important;
+    }
+  }
+}

@@ -4,6 +4,12 @@
 //     padding-right: min(3.5rem, 5vw) !important;
 //   }
 // }
+.alignwide {
+  @include breakpoint(xhuge) {
+    padding-left: min(3.5rem, 2vw) !important;
+    padding-right: min(3.5rem, 2vw) !important;
+  }
+}
 
 //@media (min-width: 330px) and (max-width: 786px) {
 //  .is-style-responsive {
