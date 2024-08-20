@@ -1,5 +1,13 @@
-a.wp-block-button__link.wp-element-button {
+a.wp-block-button__link.wp-element-button,
+a.wp-element-button,
+.wc-block-components-button,
+.custom-product-buttons a {
   border-radius: 0;
   padding-left: 30px !important;
   padding-right: 30px !important;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--wp--preset--color--button-bg);
+  }
 }

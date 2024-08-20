@@ -22,11 +22,10 @@
 @import "blocks/header";
 
 @import "page/about";
-
-//@import "blocks/image-block";
+@import "page/home";
 //@import "blocks/comments";
 @import "woocommerce/_cart";
-// @import "woocommerce/_checkout";
+@import "woocommerce/_checkout";
 @import "archive/archive-category";
 
 @import "page/contact";

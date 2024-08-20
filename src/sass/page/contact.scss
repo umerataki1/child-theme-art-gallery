@@ -5,6 +5,10 @@
   > .wp-block-group {
     .gform_body {
       .gfield {
+        label {
+          font-size: $font-size-small;
+          color: var(--wp--preset--color--primary);
+        }
         select,
         textarea,
         input {
@@ -13,7 +17,7 @@
           padding: 10px;
           min-height: 46px;
           font-size: 16px;
-          color: $black;
+          color: var(--wp--preset--color--contrast);
           &:focus {
             box-shadow: none !important;
           }

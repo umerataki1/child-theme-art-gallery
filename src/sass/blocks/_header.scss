@@ -10,31 +10,51 @@ header {
 }
 
 .as-header-row {
-  .wp-block-group {
-    .as-logo {
-      @include breakpoint(xlarge) {
-        order: 1;
-        width: 60%;
-        display: flex;
-      }
-    }
-    .as-min-cart {
-      @include breakpoint(xlarge) {
-        display: none;
-      }
-    }
+  @include breakpoint(medium) {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr;
+  }
+  .as-cal-menu {
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
 
-    .as-nav-menu {
-      @include breakpoint(xlarge) {
-        order: 2;
-        width: 30%;
-        display: flex;
-      }
+  .wp-block-column.wp-block-column-is-layout-flow {
+    @include breakpoint(medium) {
+      width: 100% !important;
     }
-    .as-icon-inst {
-      @include breakpoint(xlarge) {
-        display: none;
-      }
+  }
+
+  .as-logo {
+    @include breakpoint(xlarge) {
+      order: 1;
+
+      display: flex;
+      width: 100%;
+      flex-basis: 100% !important;
     }
+  }
+  .as-min-cart {
+    @include breakpoint(xlarge) {
+      display: none;
+    }
+  }
+
+  .as-nav-menu {
+    @include breakpoint(xlarge) {
+      order: 2;
+    }
+  }
+  .as-icon-inst {
+    @include breakpoint(xlarge) {
+      display: none;
+    }
+  }
+}
+.wc-block-mini-cart__button {
+  svg {
+    width: 35px;
+    height: 35px;
   }
 }

@@ -519,7 +519,7 @@
       }
     },
     "typography": {
-      "fontSize": "var(--wp--preset--font-size--medium)",
+      "fontSize": "var(--wp--preset--font-size--small)",
       "fontFamily": "var(--wp--preset--font-family--body-font)",
       "lineHeight": "1.7"
     },

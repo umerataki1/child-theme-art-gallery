@@ -30,6 +30,12 @@ body nav#quadmenu .es-woocommerce-categories .slick-track {
   width: 1600px !important;
 }
 
+main.wp-block-group {
+  .entry-content {
+    min-height: 100vh;
+  }
+}
+
 nav#quadmenu.quadmenu-is-horizontal
   .quadmenu-navbar-nav
   > li.quadmenu-navbar-nav
@@ -78,172 +84,6 @@ nav#quadmenu.quadmenu-is-horizontal
 .as-left-style-imag-home .wp-block-cover__inner-container {
   max-width: 400px;
 }
-.as-imge-under-image-home {
-  position: absolute !important;
-  top: -26% !important;
-  @include breakpoint(xlarge) {
-    top: 4% !important;
-  }
-}
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute !important;
-  bottom: 0 !important;
-
-  top: unset;
-  left: unset !important;
-  width: 150px !important;
-  height: 150px !important;
-  &:hover {
-    background-color: $black !important;
-  }
-  @include breakpoint(xlarge) {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  @include breakpoint(medium) {
-    bottom: 10px !important;
-  }
-}
-.swiper-button-prev {
-  right: 15% !important;
-  @include breakpoint(xlarge) {
-    right: calc(63% - 100px) !important ;
-  }
-}
-.swiper-button-next {
-  right: 6% !important ;
-  @include breakpoint(xlarge) {
-    right: calc(50% - 100px) !important  ;
-  }
-}
-.as-home-slieder-slide-number {
-  font-size: 200px !important;
-  line-height: 0.8;
-  text-align: end;
-
-  color: $grey;
-  @include breakpoint(xlarge) {
-    display: none;
-  }
-}
-.as-home-slider {
-  padding-top: 70px !important;
-  background-color: $light-grey !important;
-  @include breakpoint(xlarge) {
-    padding-top: 0px !important;
-  }
-}
-.as-slider-col {
-  @include breakpoint(xlarge) {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center !important;
-  }
-  .wp-block-column {
-    @include breakpoint(xlarge) {
-      display: flex !important;
-      flex-direction: column;
-      align-items: center !important;
-      h2 {
-        text-align: center !important;
-      }
-      p {
-        text-align: center !important;
-      }
-    }
-  }
-}
-.as-home-top-section {
-  .uagb-slides {
-    @include breakpoint(xlarge) {
-      min-height: 1200px !important;
-      display: flex;
-      align-items: center;
-    }
-  }
-  @include breakpoint(xlarge) {
-    padding: 0 !important;
-  }
-  .as-sile-heading {
-    position: relative;
-    z-index: 1;
-    &::before {
-      content: url("https://art.duckdemo.com/wp-content/uploads/2024/08/Shape-1.svg");
-      position: absolute;
-      z-index: -1;
-      top: -40px;
-      max-height: 300px;
-      @include breakpoint(xlarge) {
-        content: " ";
-        top: -125px;
-        height: 300px !important;
-        left: -19px;
-        background-position: center;
-        background-size: contain;
-
-        background: url(https://art.duckdemo.com/wp-content/uploads/2024/08/Shape-1.svg)
-          center;
-        background-size: contain;
-        width: 150px;
-        background-repeat: no-repeat;
-      }
-    }
-  }
-  p {
-    z-index: 1 !important;
-    position: relative;
-  }
-  .wp-block-buttons {
-    z-index: 1 !important;
-    position: relative;
-  }
-}
-.as-home-heading {
-  position: relative;
-  z-index: 1;
-  &::before {
-    content: url("https://art.duckdemo.com/wp-content/uploads/2024/08/logo-shape.svg");
-    position: absolute;
-    z-index: -1;
-    bottom: 10px;
-    left: -30px;
-    max-height: 150px;
-  }
-}
-.as-slider-icone-list {
-  position: absolute;
-  rotate: 270deg;
-  bottom: 110px;
-  left: -126px;
-  z-index: 99;
-  .uagb-icon-list__wrap {
-    flex-direction: row !important;
-    margin: 0;
-    .wp-block-uagb-icon-list-child {
-      &::before {
-        content: "";
-        background-color: $grey;
-        height: 2px;
-        width: 20px;
-        margin: 0 10px;
-      }
-      span.uagb-icon-list__label {
-        color: $grey;
-        font-size: 14px !important;
-      }
-      span.uagb-icon-list__source-wrap {
-        margin: 0 !important;
-        svg {
-          width: 30px;
-        }
-      }
-    }
-  }
-  @include breakpoint(medium) {
-    display: none;
-  }
-}
 
 //as-commission-produtcs
 .as-commission-produtcs {
@@ -257,7 +97,7 @@ nav#quadmenu.quadmenu-is-horizontal
   @include breakpoint(xlarge) {
     text-align: center;
     display: flex !important;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
   }
 }

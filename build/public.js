@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // SVG for the hamburger menu
   const hamburgerIconSVG = `<svg width="24" height="24" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="20" fill="#333"></rect>
-                                <rect y="30" width="100" height="20" fill="#333"></rect>
-                                <rect y="60" width="100" height="20" fill="#333"></rect>
+                                <rect width="100" height="10" fill="#333"></rect>
+                                <rect y="30" width="100" height="10" fill="#333"></rect>
+                                <rect y="60" width="100" height="10" fill="#333"></rect>
                             </svg>`;
 
   // SVG for the close button

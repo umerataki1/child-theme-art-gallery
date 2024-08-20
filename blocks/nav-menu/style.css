@@ -113,8 +113,8 @@
     display: none; /* Hidden by default on mobile */
     flex-direction: column;
     position: fixed; /* Fixed position to cover the entire screen */
-    left: 0;
-    top: 0;
+    left: -152px;
+    top: -8px;
     width: 80%; /* Expand width to 80% */
     height: 100%; /* Expand height to 100% */
     background-color: #fff;
@@ -131,7 +131,7 @@
     display: block; /* Show hamburger on mobile */
     position: absolute;
     top: 0;
-    left: 10px;
+    right: 10px;
   }
 
   /* Close button styles */
@@ -158,5 +158,10 @@
     position: absolute;
 
     min-height: 100vh;
+  }
+}
+@media (max-width: 786px) {
+  .custom-nav-menu .nav-menu-items {
+    left: -100px;
   }
 }
