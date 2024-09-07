@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+:root :where(body) {
+  line-height: 1.7 !important;
+}
 
 body * {
   letter-spacing: unset;
@@ -8,9 +11,11 @@ body * {
 span.uagb-inline-editing {
   color: #000;
 }
-.wp-site-blocks,
-.entry-content {
+.wp-site-blocks {
   padding: 0;
+}
+.wp-block-post-content {
+  padding-top: 0;
 }
 main#wp--skip-link--target {
   margin: 0;

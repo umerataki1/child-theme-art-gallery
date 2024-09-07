@@ -150,24 +150,24 @@
           "size": ".9rem",
           "name": "Extra small",
           "fluid": false,
-          "lineHeight": "1.3"
+          "lineHeight": "1.7"
         },
         {
           "slug": "small",
           "size": "1.1rem",
           "name": "Small",
           "fluid": false,
-          "lineHeight": "1.3"
+          "lineHeight": "1.7"
         },
         {
           "slug": "medium",
-          "size": "1.2rem",
+          "size": "1.3rem",
           "name": "Medium",
           "fluid": {
             "min": "1.25rem",
             "max": "1.5rem"
           },
-          "lineHeight": "1.4"
+          "lineHeight": "1.7"
         },
         {
           "slug": "large",
@@ -177,7 +177,7 @@
             "min": "1.75rem",
             "max": "2rem"
           },
-          "lineHeight": "1.4"
+          "lineHeight": "1.7"
         },
         {
           "slug": "x-large",
@@ -187,7 +187,7 @@
             "min": "2.5rem",
             "max": "2.75rem"
           },
-          "lineHeight": "1.4"
+          "lineHeight": "1.7"
         },
         {
           "slug": "xx-large",
@@ -197,7 +197,7 @@
             "min": "3rem",
             "max": "3.75rem"
           },
-          "lineHeight": "1.5"
+          "lineHeight": "1.7"
         },
         {
           "slug": "xxx-large",
@@ -207,7 +207,7 @@
             "min": "3rem",
             "max": "3.75rem"
           },
-          "lineHeight": "1.5"
+          "lineHeight": "1.7"
         }
       ]
     },
@@ -222,7 +222,8 @@
       },
       "core/comment-date": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
+          "fontSize": "var(--wp--preset--font-size--small)",
+          "lineHeight": "1.7"
         }
       },
       "core/comment-edit-link": {
@@ -251,7 +252,8 @@
       },
       "core/footnotes": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--extra-small)"
+          "fontSize": "var(--wp--preset--font-size--extra-medium)",
+          "lineHeight": "1.7"
         },
         "color": {
           "text": "var(--wp--preset--color--secondary)"
@@ -466,7 +468,8 @@
       },
       "p": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--body-font)"
+          "fontFamily": "var(--wp--preset--font-family--body-font)",
+          "lineHeight": "1.7"
         }
       },
 
@@ -505,7 +508,8 @@
         },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)",
-          "fontWeight": "400"
+          "fontWeight": "400",
+          "lineHeight": "1.7"
         },
 
         ":hover": {

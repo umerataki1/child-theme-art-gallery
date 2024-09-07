@@ -33,6 +33,8 @@
       flex-direction: column;
       .gform_button {
         background-color: $black !important;
+        padding: 15px !important;
+        border-radius: 0 !important;
         &:focus {
           box-shadow: none !important;
         }

@@ -108,7 +108,7 @@
   padding: 10px;
 }
 /* Show hamburger menu and hide main menu on mobile */
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
   .custom-nav-menu .nav-menu-items {
     display: none; /* Hidden by default on mobile */
     flex-direction: column;

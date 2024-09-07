@@ -5,20 +5,18 @@
 //   }
 // }
 .alignwide {
-  @include breakpoint(xhuge) {
+  @include breakpoint(xxhuge) {
     padding-left: min(3.5rem, 2vw) !important;
     padding-right: min(3.5rem, 2vw) !important;
   }
 }
 
-//@media (min-width: 330px) and (max-width: 786px) {
-//  .is-style-responsive {
-//    flex-direction: column !important;
-//    gap: 0.2rem !important;
-//    font-size: 12px !important;
-//    white-space: nowrap;
-//  }
-//}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .alignwide {
+    padding-left: min(3.5rem, 2vw) !important;
+    padding-right: min(3.5rem, 2vw) !important;
+  }
+}
 //
 //@media (max-width: 330px) {
 //  .is-style-responsive {

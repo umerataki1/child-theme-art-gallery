@@ -10,10 +10,15 @@ header {
 }
 
 .as-header-row {
+  @include breakpoint-min-max(large, xhuge) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   @include breakpoint(medium) {
     display: grid !important;
     grid-template-columns: 1fr 2fr;
   }
+
   .as-cal-menu {
     display: flex;
     display: flex;
@@ -23,6 +28,8 @@ header {
   .wp-block-column.wp-block-column-is-layout-flow {
     @include breakpoint(medium) {
       width: 100% !important;
+    }
+    .wc-block-mini-cart__button {
     }
   }
 
@@ -52,9 +59,6 @@ header {
     }
   }
 }
-.wc-block-mini-cart__button {
-  svg {
-    width: 35px;
-    height: 35px;
-  }
+.as-icon-inst svg {
+  margin-top: 5px;
 }
