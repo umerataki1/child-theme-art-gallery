@@ -1,8 +1,8 @@
 // Grids
 
 // this should match with theme.json
-$grid-container: 1140; // 1126 =>  980
-$grid-container-wide: 1600; // 1360 => 1180
+$grid-container: var(--wp--style--global--content-size); // 1126 =>  980
+$grid-container-wide: var(--wp--style--global--wide-size); // 1360 => 1180
 //$grid-container-narrow: 900px; // nothing
 $grid-container-padding: 2.1785rem; // This mainly controls the spacing on sides for small screens
 

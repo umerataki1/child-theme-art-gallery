@@ -25,23 +25,23 @@
 }
 
 .has-global-padding {
-  padding-right: var(--wp--preset--spacing--40);
   padding-left: var(--wp--preset--spacing--40);
+  padding-right: var(--wp--preset--spacing--40);
 }
 
 .has-global-padding > .alignfull {
-  margin-right: calc(var(--wp--preset--spacing--40) * -1);
   margin-left: calc(var(--wp--preset--spacing--40) * -1);
+  margin-right: calc(var(--wp--preset--spacing--40) * -1);
 }
 
 .wp-block-group.is-content-justification-center {
   text-align: center;
 }
 .wp-block-group.is-content-justification-right {
-  text-align: right;
+  text-align: left;
 }
 .wp-block-group.is-content-justification-left {
-  text-align: left;
+  text-align: right;
 }
 
 a.wp-block-button__link.wp-element-button,
@@ -49,8 +49,8 @@ a.wp-element-button,
 .wc-block-components-button,
 .custom-product-buttons a {
   border-radius: 0;
-  padding-left: var(--wp--preset--spacing--30) !important;
   padding-right: var(--wp--preset--spacing--30) !important;
+  padding-left: var(--wp--preset--spacing--30) !important;
 }
 a.wp-block-button__link.wp-element-button:focus,
 a.wp-element-button:focus,
@@ -155,22 +155,22 @@ footer.wp-block-template-part nav.custom-nav-menu li a:hover {
 
 @media (max-width: calc(1140px - 1px)) {
   .wp-block-group .alignfull > .wp-block-columns {
-    padding-left: min(6.5rem, 8vw);
     padding-right: min(6.5rem, 8vw);
+    padding-left: min(6.5rem, 8vw);
   }
 }
 
 @media (max-width: calc(1140px - 1px)) {
   .wp-block-cover:where(.alignfull) {
-    padding-left: min(6.5rem, 8vw);
     padding-right: min(6.5rem, 8vw);
+    padding-left: min(6.5rem, 8vw);
   }
 }
 
 .is-style-overlap {
   width: 75%;
   margin-top: -50px;
-  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .is-style-full-width > img {
@@ -224,8 +224,8 @@ ul.wc-block-product-gallery-large-image__container .wc-block-product-gallery-lar
 
 @media (max-width: calc(1440px - 1px)) {
   .single-product .woocommerce.product {
-    padding-left: 20px !important;
-    padding-right: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px;
   }
 }
 
@@ -294,8 +294,8 @@ ul.wc-block-product-gallery-large-image__container .wc-block-product-gallery-lar
   .as-products-shop-page ul.wc-block-grid__products {
     gap: 30px !important;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-left: var(--wp--preset--spacing--20);
     padding-right: var(--wp--preset--spacing--20);
+    padding-left: var(--wp--preset--spacing--20);
   }
 }
 .as-products-shop-page ul.wc-block-grid__products li.wc-block-grid__product {
@@ -341,9 +341,9 @@ ul.as-products-shop-page {
 .wp-block-uagb-slider .swiper-pagination {
   width: -moz-fit-content;
   width: fit-content;
-  right: 30%;
-  left: auto;
-  transform: translate(50%, 0px);
+  left: 30%;
+  right: auto;
+  transform: translate(-50%, 0px);
 }
 .wp-block-uagb-slider .swiper-pagination .swiper-pagination-bullet {
   width: 30px;
@@ -358,16 +358,16 @@ ul.as-products-shop-page {
 @media (min-width: 1100px) and (max-width: 1634px) {
   .alignwide,
   .has-global-padding {
-    padding-left: var(--wp--preset--spacing--40) !important;
     padding-right: var(--wp--preset--spacing--40) !important;
+    padding-left: var(--wp--preset--spacing--40) !important;
   }
 }
 @media (min-width: 700px) and (max-width: 1634px) {
   .archive .alignwide,
   .archive .has-global-padding,
   .product-template-default .has-global-padding {
-    padding-left: var(--wp--preset--spacing--40) !important;
     padding-right: var(--wp--preset--spacing--40) !important;
+    padding-left: var(--wp--preset--spacing--40) !important;
   }
 }
 .page .wp-block-post-date {
@@ -452,14 +452,14 @@ header {
 
 @media (min-width: 960px) and (max-width: calc(1440px - 1px)) {
   .as-header-row {
-    padding-left: var(--wp--preset--spacing--30) !important;
     padding-right: var(--wp--preset--spacing--30) !important;
+    padding-left: var(--wp--preset--spacing--30) !important;
   }
 }
 @media (max-width: calc(1440px - 1px)) {
   .as-header-row {
-    padding-left: 40px;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (max-width: calc(782px - 1px)) {
@@ -539,7 +539,7 @@ header {
   position: absolute !important;
   bottom: -40px !important;
   top: unset;
-  left: unset !important;
+  right: unset !important;
   width: 150px !important;
   height: 150px !important;
 }
@@ -562,22 +562,22 @@ header {
 }
 
 .swiper-button-prev {
-  right: 15% !important;
+  left: 15% !important;
 }
 @media (max-width: calc(1080px - 1px)) {
   .swiper-button-prev {
     bottom: 25px !important;
-    right: calc(63% - 100px) !important;
+    left: calc(63% - 100px) !important;
   }
 }
 
 .swiper-button-next {
-  right: 6% !important;
+  left: 6% !important;
 }
 @media (max-width: calc(1080px - 1px)) {
   .swiper-button-next {
     bottom: 25px !important;
-    right: calc(50% - 100px) !important;
+    left: calc(50% - 100px) !important;
   }
 }
 
@@ -651,7 +651,7 @@ header {
     content: " ";
     top: -20px;
     height: 300px !important;
-    left: -29px;
+    right: -29px;
     background-position: center;
     background-size: contain;
     background: url(https://art.duckdemo.com/wp-content/uploads/2024/08/Shape-1.svg) center;
@@ -678,7 +678,7 @@ header {
   position: absolute;
   z-index: -1;
   bottom: 10px;
-  left: -30px;
+  right: -30px;
   max-height: 150px;
 }
 
@@ -686,12 +686,12 @@ header {
   position: absolute;
   rotate: 270deg;
   bottom: 20%;
-  left: -155px;
+  right: -155px;
   z-index: 99;
 }
 @media (max-width: calc(1440px - 1px)) {
   .as-slider-icone-list {
-    left: -151px;
+    right: -151px;
   }
 }
 .as-slider-icone-list .uagb-icon-list__wrap {
@@ -918,16 +918,16 @@ span.wc-block-components-totals-item__label {
   border-radius: 100%;
 }
 .slick-slider .slick-arrow.slick-prev {
-  left: 10px !important;
-}
-.slick-slider .slick-arrow.slick-prev:hover {
-  left: 5px !important;
-}
-.slick-slider .slick-arrow.slick-next {
   right: 10px !important;
 }
-.slick-slider .slick-arrow.slick-next:hover {
+.slick-slider .slick-arrow.slick-prev:hover {
   right: 5px !important;
+}
+.slick-slider .slick-arrow.slick-next {
+  left: 10px !important;
+}
+.slick-slider .slick-arrow.slick-next:hover {
+  left: 5px !important;
 }
 .slick-slider .slick-arrow svg {
   width: 16px;
@@ -1234,5 +1234,3 @@ html {
     max-height: 100% !important;
   }
 }
-
-/*# sourceMappingURL=public.css.map*/

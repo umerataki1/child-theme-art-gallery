@@ -14,7 +14,7 @@ $breakpoints: (
 
 @mixin breakpoint($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @media (max-width: calc(#{map-get($breakpoints, $breakpoint)} - 1px)) {
       @content;
     }
   } @else {
@@ -45,99 +45,9 @@ $breakpoints: (
   }
 }
 
-// $rem-base: 16px;
-
-// @function strip-unit($num) {
-//   @return $num / ($num * 0 + 1);
-// }
-
-// @function convert-to-rem($value, $base-value: $rem-base) {
-//   $value: calc(strip-unit($value) / strip-unit($base-value) * 1rem);
-//   @if ($value == 0rem) {
-//     $value: 0;
-//   }
-//   @return $value;
-// }
-
-// @function rem-calc($values, $base-value: $rem-base) {
-//   $max: length($values);
-//   @if $max == 1 {
-//     @return convert-to-rem(nth($values, 1), $base-value);
-//   }
-//   $remValues: ();
-//   @for $i from 1 through $max {
-//     $remValues: append(
-//       $remValues,
-//       convert-to-rem(nth($values, $i), $base-value)
-//     );
-//   }
-//   @return $remValues;
-// }
-
-// @mixin alertBoxStyling {
-//   .alert-box {
-//     padding: 1rem;
-//     color: #31708f;
-//     background-color: #d9edf7;
-//     border-color: #bce8f1;
-
-//     &-warning {
-//       color: #8a6d3b;
-//       background-color: #fcf8e3;
-//       border-color: #faebcc;
-//     }
-
-//     &-error {
-//       color: #a94442;
-//       background-color: #f2dede;
-//       border-color: #ebccd1;
-//     }
-
-//     &-success {
-//       color: #3c763d;
-//       background-color: #dff0d8;
-//       border-color: #d6e9c6;
-//     }
-//   }
-// }
-
-@mixin gravityFormButton {
-  .gform_button {
-    background-color: var(--wp--preset--color--primary) !important;
-    color: var(--wp--preset--color--secondary) !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) !important;
-    padding: 15px 34px !important;
-    width: max-content !important;
-    font-size: 16px !important;
-    border-radius: 0 !important;
-    border: none !important;
-    cursor: pointer;
-
-    &:hover {
-      background-color: var(--wp--preset--color--text-color) !important;
-      color: var(--wp--preset--color--secondary) !important;
-    }
+@mixin addPadding1440 {
+  @include breakpoint(xhuge) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
-}
-
-@mixin button {
-  height: 35px !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 0;
-  cursor: pointer;
-  font-family: "Arial", sans-serif;
-  line-height: 100% !important;
-}
-
-@mixin button-small {
-  @include button;
-  min-width: 168px !important;
 }

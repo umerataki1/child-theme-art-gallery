@@ -3,8 +3,8 @@ a.wp-element-button,
 .wc-block-components-button,
 .custom-product-buttons a {
   border-radius: 0;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-left: var(--wp--preset--spacing--30) !important;
+  padding-right: var(--wp--preset--spacing--30) !important;
   &:focus {
     outline: none;
     box-shadow: none;

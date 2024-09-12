@@ -80,7 +80,10 @@ function insert_code_to_wp_body_open()
 
 // add_action('wp_footer', 'insert_code_to_wp_footer');
 
-
+/**
+ * Change the placeholder image
+ */
+ 
 /**
  * Code shall be inserted in wp_head
  *

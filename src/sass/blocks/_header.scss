@@ -11,9 +11,10 @@ header {
 
 .as-header-row {
   @include breakpoint-min-max(large, xhuge) {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: var(--wp--preset--spacing--30) !important;
+    padding-right: var(--wp--preset--spacing--30) !important;
   }
+  @include addPadding1440;
   @include breakpoint(medium) {
     display: grid !important;
     grid-template-columns: 1fr 2fr;

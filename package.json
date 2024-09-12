@@ -14,13 +14,13 @@
     "dev": "concurrently -k \"npm run start\" \"npm run sync\""
   },
   "devDependencies": {
-    "@wordpress/scripts": "^19.2.4",
-    "browser-sync": "^3.0.2",
+    "@wordpress/scripts": "^29.0.0",
+    "browser-sync": "^2.26.2",
     "concurrently": "^8.2.2",
     "dotenv": "^16.3.1"
   },
   "dependencies": {
-    "@wordpress/block-editor": "^13.2.0",
+    "@wordpress/block-editor": "^11.3.2",
     "@wordpress/blocks": "^13.2.0",
     "@wordpress/dom-ready": "^4.2.0",
     "@wordpress/i18n": "^5.2.0",

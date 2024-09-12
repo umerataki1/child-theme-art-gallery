@@ -7,16 +7,6 @@
 }
 .as-slider-col {
   min-height: 77vh;
-  padding-left: 50px;
-  padding-right: 50px;
-  @include breakpoint(xhuge) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  @include breakpoint(medium) {
-    padding-left: 00px;
-    padding-right: 00px;
-  }
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -149,7 +139,7 @@
   position: absolute;
   rotate: 270deg;
   bottom: 20%;
-  left: -136px;
+  left: -155px;
   z-index: 99;
   @include breakpoint(xhuge) {
     left: -151px;
