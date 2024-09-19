@@ -157,6 +157,9 @@ ul.wc-block-product-gallery-large-image__container {
 //     }
 //   }
 // }
+.wc-block-product-gallery-large-image__image-element {
+  padding: 0 !important;
+}
 .as-products-shop-page {
   ul.wc-block-grid__products {
     display: grid !important;
