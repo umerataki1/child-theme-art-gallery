@@ -496,7 +496,7 @@
 
         ":hover": {
           "color": {
-            "background": "var(--wp--preset--color--secondary)"
+            "background": "var(--wp--preset--color--primary)"
           },
           "border": {
             "color": "var(--wp--preset--color--white)"

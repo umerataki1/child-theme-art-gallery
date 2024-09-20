@@ -18,18 +18,19 @@
 }
 
 .custom-product-buttons .button:hover {
-  background-color: var(--wp--preset--color--secondary);
+  background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--white);
-  border-color: var(--wp--preset--color--secondary);
+  border-color: var(--wp--preset--color--primary);
 }
 
 .custom-product-buttons .add_to_cart_button {
-  background-color: var(--wp--preset--color--primary);
+  background-color: var(--wp--preset--color--button-bg);
+  border-color: var(--wp--preset--color--button-bg);
   color: var(--wp--preset--color--white);
 }
 
 .custom-product-buttons .add_to_cart_button:hover {
-  background-color: var(--wp--preset--color--secondary);
+  background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--white);
-  border-color: var(--wp--preset--color--secondary);
+  border-color: var(--wp--preset--color--primary);
 }

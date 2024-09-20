@@ -87,8 +87,9 @@ ul.wc-block-product-gallery-large-image__container {
       img {
         object-fit: cover;
         object-position: center;
+        height: auto !important;
 
-        transform: translate(0, -19%) !important;
+        transform: translate(0, -19%);
         aspect-ratio: 1 / 0;
         @include breakpoint-max(medium) {
           aspect-ratio: 1/1.2;
@@ -114,49 +115,11 @@ ul.wc-block-product-gallery-large-image__container {
     .wc-block-product-gallery-thumbnails__thumbnail {
       width: auto;
       flex: 1 !important;
+      max-width: 300px;
     }
   }
 }
 
-// body.archive {
-//   div.wp-site-blocks {
-//     div.as-products-shop-page {
-//       min-height: 100vh;
-//       max-width: $grid-container-wide;
-//       margin: auto;
-//       ul.products-block-post-template {
-//         display: grid;
-//         gap: 130px !important;
-//         li {
-//           border: none !important;
-//           padding: 0;
-//           .wc-block-components-product-image.wc-block-grid__product-image {
-//             img {
-//               aspect-ratio: 1 / 1;
-//               aspect-ratio: 1;
-//             }
-//           }
-
-//           h3 {
-//             a {
-//               text-decoration: none !important;
-//               font-weight: 400;
-//             }
-//           }
-//         }
-//         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-//         @include breakpoint-max(xlarge) {
-//           gap: 30px !important;
-//           grid-template-columns: repeat(2, minmax(0, 1fr));
-//         }
-//         @include breakpoint-max(medium) {
-//           gap: 30px !important;
-//           grid-template-columns: repeat(1, minmax(0, 1fr));
-//         }
-//       }
-//     }
-//   }
-// }
 .wc-block-product-gallery-large-image__image-element {
   padding: 0 !important;
 }
@@ -218,5 +181,15 @@ ul.as-products-shop-page {
   @include breakpoint-max(medium) {
     gap: 30px !important;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.as-new-veration {
+  .button.add_to_cart_button {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  a.button.view_product {
+    border-color: $primary;
   }
 }
